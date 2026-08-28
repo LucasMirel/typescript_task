@@ -55,5 +55,8 @@ const employee3= {
 }
 
 console.log(Employee1);
+console.log("--------------------------------------------------");
 console.log(employee2);
+console.log("--------------------------------------------------");
 console.log(employee3);
+console.log("--------------------------------------------------");

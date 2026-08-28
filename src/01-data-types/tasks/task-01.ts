@@ -22,5 +22,7 @@ const midtermScore: number = 84;
 const finalScore: number = 91.5;
 const attendanceScore: number = 100;
 
+console.log("--------------------------------------------------");
 console.log("=== Student Data ===");
 console.log({ studentName, studentID, assignmentScore, midtermScore, finalScore, attendanceScore });
+console.log("--------------------------------------------------");

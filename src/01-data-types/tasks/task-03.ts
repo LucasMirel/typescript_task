@@ -42,5 +42,8 @@ const studentD = {
 }
 
 console.log(studentA);
+console.log("--------------------------------------------------");
 console.log(studentB);
+console.log("--------------------------------------------------");
 console.log(studentD);
+console.log("--------------------------------------------------");

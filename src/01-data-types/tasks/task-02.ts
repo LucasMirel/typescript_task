@@ -21,9 +21,11 @@ const productNum: number = 2;
 const discount: number = 0.25;
 let unit: number = 18;
 
+console.log("--------------------------------------------------");
 console.log("Product Code: ", productCode);
 console.log("Product Cost: ", productCost);
 console.log("Quantity: ", productNum);
 console.log("Discount: ", discount);
 console.log("Final Price: ", (productCost-(productCost*discount)*2));
 console.log("stock: ", unit);
+console.log("--------------------------------------------------");
