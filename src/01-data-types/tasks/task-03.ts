@@ -9,3 +9,5 @@
  * 
  * display the student data using console.log.
  */
+
+type student=
