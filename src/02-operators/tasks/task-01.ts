@@ -14,3 +14,20 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+const friedRicePrice: number = 18000;
+const friedRiceQty: number = 3;
+const waterPrice: number = 5000;
+const waterQty: number = 2;
+const discount: number = 10000;
+const totalFriedRice: number = friedRicePrice * friedRiceQty;
+const totalWater: number = waterPrice * waterQty;
+const grandTotal: number = totalFriedRice + totalWater;
+const finalPayment: number = grandTotal - discount;
+
+
+console.log(`Fried Rice: 3 x Rp${friedRicePrice.toLocaleString("id-ID")} = Rp${totalFriedRice.toLocaleString("id-ID")}`);
+console.log(`Mineral Water: 2 x Rp${waterPrice.toLocaleString("id-ID")} = Rp${totalWater.toLocaleString("id-ID")}`);
+console.log(`Grand Total (before discount): Rp${grandTotal.toLocaleString("id-ID")}`);
+console.log(`Discount (Student Council): -Rp${discount.toLocaleString("id-ID")}`);
+console.log(`Final Payment: Rp${finalPayment.toLocaleString("id-ID")}`);

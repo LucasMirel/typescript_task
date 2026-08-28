@@ -17,3 +17,19 @@
  * - Bonus
  * - Final salary
  */
+
+const Name: string = "Dimas";
+const Salary: number = 5000000;
+const overtime: number = 12;
+const Rate: number = 50000;
+
+const overtimePay: number = overtime*Rate;
+const bonus: number = overtime > 10 ? 300000 : 0;
+const finalSalary: number = Salary + overtimePay + bonus;
+
+console.log(`Employee Name: ${Name}`);
+console.log(`Basic Salary: Rp${Salary.toLocaleString("id-ID")}`);
+console.log(`Overtime Hours: ${overtime} x Rp${Rate.toLocaleString("id-ID")} = Rp${overtimePay.toLocaleString("id-ID")}`);
+console.log(`Bonus: Rp${bonus.toLocaleString("id-ID")} ${overtime > 10 ? "(overtime > 10 hours)" : "(no bonus)"}`);
+console.log(`Final Salary: Rp${finalSalary.toLocaleString("id-ID")}`);
+console.log(`Final Salary: Rp${finalSalary.toLocaleString("id-ID")}`);

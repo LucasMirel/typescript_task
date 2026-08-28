@@ -33,3 +33,33 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+
+const Name: string = "Alya Putri";
+const gpa: number = 3.89;
+const familyInc: number = 4200000;
+const compCount: number = 4;
+const hasDiscRec: boolean = false;
+const docsComp: boolean = true;
+
+const meetGpa: boolean = gpa >= 3.75;
+const meetInc: boolean = familyInc < 5000000;
+const meetComp: boolean = compCount >= 3;
+const meetDisc: boolean = hasDiscRec === false;
+const meetDocs: boolean = docsComp === true;
+
+const isQualified: boolean =
+  meetGpa && meetInc && meetComp && meetDisc && meetDocs;
+
+const scholAmount: number = isQualified ? 12000000 : 0;
+const totalBudget: number = 500000000;
+const remainBudget: number = totalBudget - scholAmount;
+
+console.log(`Student Name: ${Name}`);
+console.log(`GPA: ${gpa} (>= 3.75 required) -> ${meetGpa}`);
+console.log(`Family Income: Rp${familyInc.toLocaleString("id-ID")} (< Rp5,000,000 required) -> ${meetInc}`);
+console.log(`Competition Count: ${compCount} (>= 3 required) -> ${meetComp}`);
+console.log(`No Disciplinary Record: ${meetDisc}`);
+console.log(`Documents Complete: ${meetDocs}`);
+console.log(`Is Qualified: ${isQualified}`);
+console.log(`Scholarship Amount: Rp${scholAmount.toLocaleString("id-ID")}`);
+console.log(`Remaining Scholarship Budget: Rp${remainBudget.toLocaleString("id-ID")}`);
