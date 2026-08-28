@@ -1,0 +1,128 @@
+body {  /* Background */
+
+    /* Background colors */
+    background-color: #0a223b;
+    color: #7cc1ef;
+
+    /* Positions */
+    padding: 80px;
+
+    /* Fonts */
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+
+}
+.header {  /* Opening Lines */
+
+    /* Fonts and Colors */
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #62ccf6;
+    background-color: #0a223b;
+
+    /* Borders */
+    border: 1px solid #9fd9ef;
+    border-radius: 5px;
+
+    /* Positions */
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-sizing: border-box;
+    max-width: 600px;
+    max-height: 200px;
+}
+
+.content { /* Bottom Texts */
+
+    /* Fonts and Colors */
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: #7cc1ef;
+    background-color: #062430;
+
+    /* Borders */
+    border-radius: 5px;
+    border: 1px solid #9fd9ef;
+
+    /* positions */
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    padding-top: 10px;
+}
+
+hr {
+    color: #77d1f4;
+    max-width: 600px;
+}
+
+.navbarline {
+    color:aliceblue;
+}
+
+.button {   /* The "next" Button */
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+
+  /* Font Colors */
+  background-color: #f99600;
+  color: white;
+  border: 1px solid #f99600;
+
+  /* Borders */
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  max-width: 600px;
+  max-height: 200px;
+  width: fit-content;
+  text-align: center;
+  justify-content: center;
+
+  /* Positions */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 60px;
+}
+
+.button1 {  /* The "Koley's Github" Button */
+    /* Text Font */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+
+    /* Colors */
+    background-color: #f99600;
+    color: white;
+    border: 1px solid #f99600;
+
+    /* Borders */
+    border-radius: 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    max-height: 200px;
+    gap: 15px;
+
+    /* Positions */
+    text-align: center;
+    cursor: pointer;
+    width: 600px;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.text {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+/* image */
+.image {
+    width: 20px;
+    height: 30px;
+}

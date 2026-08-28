@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="BMI"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-01 08:27:28 AM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDE7MDg6MjI6MTMgQU07MzM4NQ=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDE7MDg6Mjc6MjggQU07MTszNTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="weight, height" type="Integer" array="False" size=""/>
+            <input variable="Name"/>
+            <input variable="weight"/>
+            <input variable="height"/>
+            <output expression="&quot;Student Name : &quot;&amp;Name&#13;&#10;&amp;&#13;&#10;&quot;Weight : &quot;&amp;weight&#13;&#10;&amp;&#13;&#10;&quot;Height : &quot;&amp;height&#13;&#10;&amp;&#13;&#10;&quot;BMI : &quot;&amp;(weight*height^2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

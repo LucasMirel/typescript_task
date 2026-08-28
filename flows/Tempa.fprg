@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tempa"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-01 08:31:52 AM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDE7MDg6Mjc6MzAgQU07MzM4OQ=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDE7MDg6MzE6NTIgQU07MTszNDk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="F" type="Integer" array="False" size=""/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <output expression="&quot;===Temperature Converter===&quot;" newline="True"/>
+            <input variable="C"/>
+            <output expression="&quot;Temperature (C) :  &quot;&amp;C" newline="True"/>
+            <output expression="&quot;Temperature (F) :  &quot;&amp;(9%5*C+32)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

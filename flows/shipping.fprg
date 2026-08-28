@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="shipping"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-03 01:22:07 PM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDM7MTA6MzQ6MzggQU07MzM5MA=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDM7MDE6MjI6MDcgUE07MTszNTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name, product" type="String" array="False" size=""/>
+            <declare name="price, quantity, subtotal, ship, total" type="Integer" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="product"/>
+            <input variable="price"/>
+            <input variable="quantity"/>
+            <input variable="ship"/>
+            <assign variable="subtotal" expression="(price*quantity)"/>
+            <assign variable="total" expression="(subtotal*quantity)"/>
+            <output expression="&quot;====Online Invoice====&quot;&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Customer : &quot;&amp;name&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Product : &quot;&amp;product&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Quantity : &quot;&amp;quantity&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Subtotal : &quot;&amp;(subtotal*quantity)&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Shipping Fee : &quot;&amp;ship&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;grand Total : &quot;&amp;(total+ship)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

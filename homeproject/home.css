@@ -1,0 +1,38 @@
+
+.header {
+    border: 6px ridge #f99600;
+    background-color: #f9f6f6;
+    border-radius: 4px;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    border-sizzing: border-box;
+    margin: 0;
+    max-width: 600px;
+    max-height: 200px;
+    }
+
+.content {
+    margin: 20px auto;
+    padding: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(255, 247, 247);
+    border-radius: 10px;
+}
+
+.button {
+    background-color: #f99600;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #f99600;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}

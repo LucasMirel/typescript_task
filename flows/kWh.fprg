@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kWh"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-03 10:34:36 AM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDM7MDg6Mzk6MjggQU07MzQwMQ=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDM7MTA6MzQ6MzYgQU07MTszNDk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="use, price, total" type="Integer" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="use"/>
+            <input variable="price"/>
+            <output expression="&quot;===ElectricityBill===&quot;&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Customer Name : &quot;&amp;name&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Usage : &quot;&amp;use&amp;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Price per kWh : &quot;&amp;price&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;-------------------&quot;&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;ToChar(13)&#13;&#10;&amp;&#13;&#10;&quot;TotalBill : &quot;&amp;(price*use)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

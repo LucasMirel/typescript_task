@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(10, 34, 59);
+    font-family: arial;
+}
+
+.header {
+    text-align: center;
+    color: rgb(98, 204, 246);
+}
+
+
+.home {
+    color: rgb(98, 204, 246);
+    border: solid rgb(98, 204, 246) 1px;
+    background-color: rgb(10, 34, 59);
+    border-radius: 5px;
+}
+
+.register {
+    color: rgb(98, 204, 246);
+    border: solid rgb(98, 204, 246) 1px;
+    background-color: rgb(10, 34, 59);
+    border-radius: 5px;
+}
+
+.schedule {
+    color: rgb(98, 204, 246);
+    border: solid rgb(98, 204, 246) 1px;
+    background-color: rgb(10, 34, 59);
+    border-radius: 5px;
+}
+
+.image {
+    text-align: center;
+}
+
+.content {
+    color: rgb(98, 204, 246);
+    border: solid rgb(98, 204, 246) 1px;
+    text-align: center;
+}
+
+.link {
+    color: greenyellow;
+}
+
+.scheduletable {
+    text-align: center;
+    color:rgb(98, 204, 246);
+    border: solid rgb(98, 204, 246) 1px;
+    border-radius: 5px;
+    margin: 5px 10px 5px 5px;
+    padding: 10px;
+}

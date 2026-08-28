@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam_HTML</title>
+    <link rel="stylesheet" href="cssexam.css">
+</head>
+<body>
+    <div class="navbar">
+        <center>
+            <button onclick="window.location.href='index.html'" class="home">Home</button>
+            <button onclick="window.location.href='htmlex.html'" class="register">Register</button>
+            <button onclick="window.location.href='Schedule.html'" class="schedule">Schedule</button>
+        </center>
+    </div>
+
+    <hr>
+
+    <div class="header">
+        <h1>OdisseyWeb</h1>
+        <h2>Welcome Champ!</h2>
+    </div>
+
+    <div class="image">
+        <img src="https://i.pinimg.com/1200x/d5/2c/06/d52c06ce7c623112f6864d0e91b65bc5.jpg" alt="Web Development" width="300">
+    </div>
+
+    <div class="content">
+        <h3>Sports Club Description</h3>
+        <p>Our sports club is a fun and active community where students can improve their skills, stay healthy, and enjoy playing sports together. We encourage teamwork, discipline, friendship, and a positive competitive spirit.</p>
+        
+    </div>
+
+    <div class="link">
+        <a href="https://www.example.com" target="_blank">Visit our website for more information</a>
+    </div>
+
+    <div class="scheduletable">
+        <center>
+        <h3>Schedule</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Game</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>06:30 - 07:15</td>
+                    <td>Fortnite Esport</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>07:15 - 07:45</td>
+                    <td>Badminton competition</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>07:45 - 08:15</td>
+                    <td>Dancing Competition</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>08:15 - 08:45</td>
+                    <td>DBL</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Friday</td>
+                    <td>08:45 - 09:15</td>
+                    <td>Football comptition</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>09:15 - 09:45</td>
+                    <td>Volleyball competion</td>
+                </tr>
+                </center>
+    </div>
+
+    <div class="registration">
+        <h3>Registration Form</h3>
+        <form action="submit_registration.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="sport">Select Sport:</label>
+            <select id="sport" name="sport" required>
+                <option value="">--Select--</option>
+                <option value="fortnite">Fortnite Esport</option>
+                <option value="badminton">Badminton Competition</option>
+                <option value="dancing">Dancing Competition</option>
+                <option value="dbl">DBL</option>
+                <option value="football">Football Competition</option>
+                <option value="volleyball">Volleyball Competition</option>
+            </select><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+</body>
+</html>

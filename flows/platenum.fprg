@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="platenum"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-01 08:22:10 AM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDE7MDc6NTY6MjQgQU07MzM5Mw=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDgtMDE7MDg6MjI6MTAgQU07MTszNDkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="park, cost" type="Integer" array="False" size=""/>
+            <declare name="Plat" type="String" array="False" size=""/>
+            <input variable="Plat"/>
+            <input variable="park"/>
+            <input variable="cost"/>
+            <output expression="&quot;Plate number :  &quot;  &amp;Plat&#13;&#10;&amp;&#13;&#10;&quot;Parking hours : &quot;  &amp;park&#13;&#10;&amp;&#13;&#10;&quot;Rate per hours : &quot;  &amp;cost&#13;&#10;&amp;&#13;&#10;&quot;Total : &quot;&amp;(cost*park)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

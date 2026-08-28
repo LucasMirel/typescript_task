@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ppdb.telkomschools.sch.id/</title>
+    <link rel="stylesheet" href="moklet.css">
+</head>
+<body>
+
+<center>
+<div style="border: 2px solid black;">
+  <div class="container">
+    <div id ="logo-wrap">
+      <div class="logo">
+        <img src="https://ppdb.telkomschools.sch.id/image/ts-only.svg"
+width="200">
+      </div>
+    </div>
+
+    <h1 class="h1">Selamat Datang!</h1>
+  
+
+    <p class="subtitle">Senang melihatmu kembali. Semoga pengalamanmu menyenangkan! ☀️</p>
+
+    <form class="form">
+      <label for="email">Email Calon Siswa</label>
+      <div class="field">
+        <span class="field-icon">✉️</span>
+        <input type="email" id="email" name="email" placeholder="">
+      </div>
+
+      <label for="password">Kata Sandi</label>
+      <div class="field1">
+        <span class="field-icon">🔑</span>
+        <input type="password" id="password" name="password" placeholder="">
+        <span class="field-icon toggle" id="togglePassword">🚫</span>
+      </div>
+
+      <div class="forgot-row">
+        <a href="#">Lupa kata sandi?</a>
+      </div>
+
+      <div class="field2">
+        <label for="phone">Nomor Telepon</label><br>
+        <span class="field-icon">📱</span>
+        <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon">
+      </div>
+
+      <div class="home-row">
+        <label for="alamat">Alamat Rumah</label><br>
+        <span class="map-icon">🗺️</span>
+        <input type="text" id="alamat" name="alamat" placeholder="alamat rumah">
+      </div>
+
+      <div>
+        <label for="Gender">Jenis Kelamin</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Masuk</button>
+
+      <div class="signup-row">
+        Belum memiliki akun? <a href="#">Daftar Disini</a>
+      </div>
+    </form>
+  </div>
+
+<script>
+  const toggle = document.getElementById('togglePassword');
+  const passwordInput = document.getElementById('password');
+  toggle.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      toggle.textContent = '👁️';
+    } else {
+      passwordInput.type = 'password';
+      toggle.textContent = '🚫';
+    }
+  });
+</script>
+
+  </div>
+
+</div>
+
+</body>
+</html>
