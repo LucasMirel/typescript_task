@@ -17,6 +17,7 @@
  * 3. Display the product data using console.log.
  */
 
+// Object Product
 type CartProduct = {
   productCode: string;
   productName: string;
@@ -26,6 +27,7 @@ type CartProduct = {
 
 }
 
+// Variables product input
 const cartProducts: CartProduct[] = [
   { productCode: "KB001", productName: "Mechanical Keyboard", cost: 850000, quantity: 1, freeShipping: true },
   { productCode: "MS002", productName: "Wireless Mouse", cost: 275000, quantity: 2, freeShipping: true },
@@ -33,6 +35,7 @@ const cartProducts: CartProduct[] = [
   { productCode: "HP004", productName: "Gaming Headset", cost: 720000, quantity: 1, freeShipping: false },
 ]
 
+// Output products
 cartProducts.forEach((product) => {
   console.log(
     `${product.productCode} | ${product.productName} | Rp${product.cost.toLocaleString("id-ID")} x ${product.quantity} | Free Shipping: ${product.freeShipping ? "Yes" : "No"}`

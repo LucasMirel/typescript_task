@@ -15,6 +15,7 @@
  * 3. Display the participant data using console.log.
  */
 
+// Object Participants
 type participant = {
     studentID: string;
     name: string;
@@ -23,12 +24,14 @@ type participant = {
 
 }
 
+// Participants setups
 const participants: participant [] = [
     { studentID: "ST001", name: "Ahmad Fauzi", age: 16, hasPaid: true },
   { studentID: "ST002", name: "Siti Nurhaliza", age: 17, hasPaid: false },
   { studentID: "ST003", name: "Budi Santoso", age: 16, hasPaid: true },
 ]
 
+// Output participant list
 participants.forEach((participant) => {
   console.log(
     `${participant.studentID} | ${participant.name} | Age: ${participant.age} | Paid: ${participant.hasPaid ? "Yes" : "Yes"}`

@@ -11,6 +11,7 @@
  * display the book data using console.log.
  */
 
+// Object book setups
 type book = {
     isbnNum: number;
     title: string;
@@ -21,6 +22,7 @@ type book = {
 
 }
 
+// Book 1#
 const book1: book = {
     isbnNum: 9780132350884,
     title: "Clean Code",
@@ -30,6 +32,7 @@ const book1: book = {
     isAvailable: true
 }
 
+// Book 2#
 const book2: book = {
     isbnNum: 9780201633610,
     title: "Design Patterns",
@@ -39,6 +42,7 @@ const book2: book = {
     isAvailable: false
 }
 
+// Book 3#
 const book3: book = {
     isbnNum: 9781491950357,
     title: "Building Microservices",
@@ -48,6 +52,7 @@ const book3: book = {
     isAvailable: true
 }
 
+// Output Library
 console.log(book1);
 console.log("--------------------------------------------------");
 console.log(book2);

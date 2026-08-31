@@ -10,6 +10,7 @@
  * display the product data using console.log.
  */
 
+// Object product setups
 type products = {
     proCode: number;
     proName: string;
@@ -20,6 +21,7 @@ type products = {
 
 }
 
+// Product 1#
 const product1: products = {
     proCode: 990,
     proName: "Milk",
@@ -29,6 +31,7 @@ const product1: products = {
     proDis: false
 }
 
+// Product 2#
 const product2: products = {
     proCode: 999,
     proName: "Eggs",
@@ -38,6 +41,7 @@ const product2: products = {
     proDis: true
 }
 
+// Product 3#
 const product3: products = {
     proCode: 1010,
     proName: "Chips",
@@ -48,6 +52,7 @@ const product3: products = {
 }
 
 
+// Output Product lists
 console.log(product1);
 console.log("--------------------------------------------------");
 console.log(product2);

@@ -22,27 +22,35 @@
  * - Whether the guest is eligible for free breakfast
  */
 
+//setups
 const hours: number = 7;
 const minutes: number = 35;
 const rateHour: number = 8000;
 const discountR: number = 0.15;
 const discountHoldHours: number = 5;
 
+//PlayTime total
 const totalMinutes: number = hours * 60 + minutes;
 
+//full and remaining hours
 const fullHours: number = Math.floor(totalMinutes / 60);
 const remainMinutes: number = totalMinutes % 60;
 
+//Subtotal
 const billedHours: number = remainMinutes > 0 ? fullHours + 1 : fullHours;
 
+//Total before Discounts
 const totalBeforeDiscount: number = billedHours * rateHour;
 
+//Discount Checks
 const isDiscountEligible: boolean = billedHours > discountHoldHours;
 const discountAmount: number = isDiscountEligible ? totalBeforeDiscount * discountR : 0;
 
+//Total after Discount
 const finalPayment: number = totalBeforeDiscount - discountAmount;
 
 
+//Outputs check
 console.log(`Usage: ${hours} hours ${minutes} minutes`);
 console.log("Total Playing Time (minutes):", totalMinutes);
 console.log("Remaining Minutes:", remainMinutes);

@@ -10,6 +10,7 @@
  * display the student data using console.log.
  */
 
+// Object setups
 type student = {
     studentID: string;
     fullName: string;
@@ -17,6 +18,7 @@ type student = {
     isActive: boolean;
 }
 
+// Student 1#
 const studentA = { 
     studentID: "ST09345" ,
     fullName: "Alvi azka" ,
@@ -25,6 +27,7 @@ const studentA = {
 
 }
 
+// Student 2#
 const studentB = {
     studentID: "ST08990" ,
     fullName: "Dimas rizky" ,
@@ -33,6 +36,7 @@ const studentB = {
 
 }
 
+// Student 3#
 const studentD = {
     studentID: "ST05558" ,
     fullName: "Reno rin" ,
@@ -41,6 +45,8 @@ const studentD = {
 
 }
 
+
+// Output IDs per student
 console.log(studentA);
 console.log("--------------------------------------------------");
 console.log(studentB);

@@ -22,12 +22,14 @@
  * 3. Display the temperature data using console.log.
  */
 
+// Object Temp setups
 type temperature = {
     time: string;
     temp: string;
 
 }
 
+// Temp reader setup
 const temperatureRead: temperature []= [
     {time: "08:00", temp: "24.5 "},
     {time: "09:00", temp: "25.1 "},
@@ -39,6 +41,7 @@ const temperatureRead: temperature []= [
     {time: "15:00", temp: "29.3 "},
 ]
 
+// Temp output
 temperatureRead.forEach((reading) => {
 console.log(`${reading.time}  ->  ${reading.temp}°C`);
 })

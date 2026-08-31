@@ -10,6 +10,7 @@
  * display the attendance data using console.log.
  */
 
+// Object Employee setups
 type employee = {
     emploID: string;
     emploName: string;
@@ -21,6 +22,7 @@ type employee = {
 
 }
 
+// Employee 1#
 const Employee1: employee = {
     emploID: "0980",
     emploName: "john",
@@ -32,6 +34,7 @@ const Employee1: employee = {
 
 }
 
+// Employee 2#
 const employee2: employee = {
     emploID: "0970",
     emploName: "Koley",
@@ -43,17 +46,19 @@ const employee2: employee = {
 
 }
 
-const employee3= {
+// Employee 3#
+const employee3: employee = {
     emploID: "0960",
     emploName: "Hans",
     date: 18,
     checkIn: "16:00",
     checkOut: "19:00",
-    totalWork: "2 Hours",
+    total: "2 Hours",
     isActive: true,
 
 }
 
+// Output emplo Logs
 console.log(Employee1);
 console.log("--------------------------------------------------");
 console.log(employee2);

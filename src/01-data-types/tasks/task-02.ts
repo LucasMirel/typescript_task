@@ -15,12 +15,14 @@
  * 5. Display the product data using console.log.
  */
 
+// Setups
 const productCode: string = "KBR-001";
 const productCost: number = 850000;
 const productNum: number = 2;
 const discount: number = 0.25;
 let unit: number = 18;
 
+// Output Checks
 console.log("--------------------------------------------------");
 console.log("Product Code: ", productCode);
 console.log("Product Cost: ", productCost);

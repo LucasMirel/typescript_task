@@ -17,6 +17,7 @@
  * Every registration stores information about both the student and the selected course.
  */
 
+// Object student setups
 type Student = {
   studentID: string;
   fullName: string;
@@ -24,6 +25,7 @@ type Student = {
 }
 
 
+// Object Course setups
 type Course = {
   courseID: string;
   courseTitle: string;
@@ -31,6 +33,7 @@ type Course = {
   totalLearningHours: number;
 }
 
+// Object Registration setups
 type Registration = {
   student: Student;
   course: Course;
@@ -38,7 +41,10 @@ type Registration = {
   isPaymentCompleted: boolean;
 }
 
+// Registration full
 const registrations: Registration[] = [
+
+// Student 1#
   {
     student: {
       studentID: "STU001",
@@ -54,6 +60,8 @@ const registrations: Registration[] = [
     registrationDate: "2026-08-01",
     isPaymentCompleted: true,
   },
+
+// Student 2#
   {
     student: {
       studentID: "STU002",
@@ -69,6 +77,8 @@ const registrations: Registration[] = [
     registrationDate: "2026-08-15",
     isPaymentCompleted: false,
   },
+
+// Student 3#
   {
     student: {
       studentID: "STU003",
@@ -86,6 +96,7 @@ const registrations: Registration[] = [
   },
 ]
 
+// Output Registration sets
 registrations.forEach((registration, index) => {
   console.log(`Registration #${index + 1}`);
   console.log(registration);
