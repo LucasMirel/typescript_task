@@ -2,22 +2,29 @@ body {
     background-color: black;
 }
 
+.header {
+     color: ;
+     background-color: #FFCC00;
+     border: 5px solid gold;
+     box-shadow: 9px 9px 9px gray;
+     border-radius: 10px;
+     margin: 20px;
+}
+
+/*Mobile First */
 .card-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
 }
 
 .card {
+     color: white;
     background-color: #FFCC00;
     border: 1px gold;
-    width: 300px;
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
     box-shadow: 9px 9px 9px gray;
 
 }
@@ -30,31 +37,27 @@ body {
 
 
 .card1 {
-     background-color: #695A54;
-    border: 1px #695A54, #3B2D2B;
-    width: 300px;
+     color: white;
+    background-color: rgb(59, 45, 43);
+    border: 1px #3B2D2B;
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
     box-shadow: 9px 9px 9px gray;
 
 }
 
 .card1:hover {
-     background-color: #695A54, #3B2D2B;
+     background-color: #695A54;
      font-size: larger;
      width: 300px;
 }
 
 .card2 {
-     background-color: #695A54;
-    border: 1px rgb(59, 45, 43);
-    width: 300px;
+     color: white;
+    background-color: #695A54;
+    border: 1px #3B2D2B;
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
     box-shadow: 9px 9px 9px gray;
 
 }
@@ -66,37 +69,62 @@ body {
 }
 
 .card3 {
-     background-color: rgb(237, 210, 83);
-    border: 1px rgb(237, 210, 83);
-    width: 300px;
+     color: white;
+    background-color: rgb(237, 210, 83);
+    border: 1px gold;
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
     box-shadow: 9px 9px 9px gray;
 
 }
-
 .card3:hover {
-     background-color: rgb(237, 210, 83);
+     background-color: gold;
      font-size: larger;
      width: 300px;
 }
 
 .card4 {
-     background-color: rgb(77, 166, 255);
-    border: 1px rgb(77, 166, 255);
-    width: 300px;
+     color: white;
+    background-color: rgb(77, 166, 255);
+    border: 1px gold;
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
     box-shadow: 9px 9px 9px gray;
 
 }
 
 .card4:hover {
-     background-color: rgb(77, 166, 255);
+     background-color: rgb(99, 176, 253);
      font-size: larger;
     width: 300px;
+}
+
+.card5 {
+     color: white;
+    background-color: rgb(157, 121, 157);
+    border: 1px gold;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 9px 9px 9px gray;
+
+}
+
+.card5:hover {
+     background-color: rgb(205, 123, 205);
+     font-size: larger;
+     width: 300px;
+}
+
+/* TAB */
+@media (min-width: 768px) {
+     .card-container {
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+     .card-container {
+          grid-template-columns: repeat(4, 1fr);
+     }
 }
