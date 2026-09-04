@@ -15,17 +15,21 @@
  * 2. Display the calculation results.
  */
 
+/* Variable products Input */
 const friedRicePrice: number = 18000;
 const friedRiceQty: number = 3;
 const waterPrice: number = 5000;
 const waterQty: number = 2;
 const discount: number = 10000;
+
+/* Price calculation */
 const totalFriedRice: number = friedRicePrice * friedRiceQty;
 const totalWater: number = waterPrice * waterQty;
 const grandTotal: number = totalFriedRice + totalWater;
 const finalPayment: number = grandTotal - discount;
 
 
+/* Log Output and calculation input or placeholder*/ 
 console.log(`Fried Rice: 3 x Rp${friedRicePrice.toLocaleString("id-ID")} = Rp${totalFriedRice.toLocaleString("id-ID")}`);
 console.log(`Mineral Water: 2 x Rp${waterPrice.toLocaleString("id-ID")} = Rp${totalWater.toLocaleString("id-ID")}`);
 console.log(`Grand Total (before discount): Rp${grandTotal.toLocaleString("id-ID")}`);

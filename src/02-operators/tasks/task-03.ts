@@ -18,15 +18,18 @@
  * - Final salary
  */
 
+/* Variable inputs */
 const Name: string = "Dimas";
 const Salary: number = 5000000;
 const overtime: number = 12;
 const Rate: number = 50000;
 
+/*Salary bonus input and calculation */
 const overtimePay: number = overtime*Rate;
 const bonus: number = overtime > 10 ? 300000 : 0;
 const finalSalary: number = Salary + overtimePay + bonus;
 
+/* Log output and placeholder*/
 console.log(`Employee Name: ${Name}`);
 console.log(`Basic Salary: Rp${Salary.toLocaleString("id-ID")}`);
 console.log(`Overtime Hours: ${overtime} x Rp${Rate.toLocaleString("id-ID")} = Rp${overtimePay.toLocaleString("id-ID")}`);
