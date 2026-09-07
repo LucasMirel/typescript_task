@@ -50,7 +50,7 @@ for (const item of cartItems) {
   totalItems++;
 }
 
-/* variable inpu 2 and calculation */
+/* variable input 2 and calculation */
 const discounthold: number = 1000000;
 const discountR: number = 0.1;
 const isDiscountApp: boolean = subtotal > discounthold;
