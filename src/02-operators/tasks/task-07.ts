@@ -22,40 +22,24 @@
  * - Whether the guest is eligible for free breakfast
  */
 
-//setups
-const hours: number = 7;
-const minutes: number = 35;
-const rateHour: number = 8000;
-const discountR: number = 0.15;
-const discountHoldHours: number = 5;
+const roomPrice: number = 650000;
+const nightsStayed: number = 4;
+const serviceCharge: number = 120000;
+const taxRate: number = 0.11;
+const isVIP: boolean = true;
 
-//PlayTime total
-const totalMinutes: number = hours * 60 + minutes;
+const roomSubtotal: number = roomPrice * nightsStayed;
+const discount: number = isVIP ? roomSubtotal * 0.12 : 0;
+const discountedRoomSubtotal: number = roomSubtotal - discount;
+const tax: number = discountedRoomSubtotal * taxRate;
+const finalPayment: number = discountedRoomSubtotal + tax + serviceCharge;
 
-//full and remaining hours
-const fullHours: number = Math.floor(totalMinutes / 60);
-const remainMinutes: number = totalMinutes % 60;
+const freeBreakfastEligible: boolean = nightsStayed >= 3 || isVIP;
 
-//Subtotal
-const billedHours: number = remainMinutes > 0 ? fullHours + 1 : fullHours;
+console.log("=== Hotel Room Checkout ===")
+console.log("\nRoom Subtotal: Rp" + roomSubtotal.toLocaleString("id-ID"));
+console.log("\nDiscount: Rp" + discount.toLocaleString("id-ID"));
+console.log("\nTax: Rp" + tax.toLocaleString("id-ID"));
+console.log("\nFinal Payment: Rp" + finalPayment.toLocaleString("id-ID"));
+console.log("\nFree Breakfast Eligible: " + (freeBreakfastEligible ? "Yes" : "No"));
 
-//Total before Discounts
-const totalBeforeDiscount: number = billedHours * rateHour;
-
-//Discount Checks
-const isDiscountEligible: boolean = billedHours > discountHoldHours;
-const discountAmount: number = isDiscountEligible ? totalBeforeDiscount * discountR : 0;
-
-//Total after Discount
-const finalPayment: number = totalBeforeDiscount - discountAmount;
-
-
-//Outputs check
-console.log(`Usage: ${hours} hours ${minutes} minutes`);
-console.log("Total Playing Time (minutes):", totalMinutes);
-console.log("Remaining Minutes:", remainMinutes);
-console.log("Total Billed Hours:", billedHours);
-console.log(`Total Before Discount: Rp${totalBeforeDiscount.toLocaleString("id-ID")}`);
-console.log(`Discount Eligible (> ${discountHoldHours} hours): ${isDiscountEligible ? "Yes" : "No"}`);
-console.log(`Discount Amount: Rp${discountAmount.toLocaleString("id-ID")}`);
-console.log(`Final Payment: Rp${finalPayment.toLocaleString("id-ID")}`);

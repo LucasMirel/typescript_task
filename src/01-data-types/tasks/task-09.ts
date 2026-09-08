@@ -34,6 +34,6 @@ const participants: participant [] = [
 // Output participant list
 participants.forEach((participant) => {
   console.log(
-    `${participant.studentID} | ${participant.name} | Age: ${participant.age} | Paid: ${participant.hasPaid ? "Yes" : "Yes"}`
+    `${participant.studentID} | ${participant.name} | Age: ${participant.age} | Paid: ${participant.hasPaid ? "Yes" : "no"}`
   );
 });
