@@ -27,3 +27,20 @@
  * 2. Implement the airline decision process.
  * 3. Display the correct message.
  */
+
+type Passanger = {
+    name : string;
+    onlineCheck : boolean;
+    cabinClass : boolean;
+    baggageWeight : number;
+}
+
+const passanger: Passanger = {
+    name : "Fajar Nugroho",
+    onlineCheck : true,
+    cabinClass : ,
+    baggageWeight : 24,
+
+}
+
+if ()
