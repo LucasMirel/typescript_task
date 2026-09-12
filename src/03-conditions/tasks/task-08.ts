@@ -38,9 +38,28 @@ type Passanger = {
 const passanger: Passanger = {
     name : "Fajar Nugroho",
     onlineCheck : true,
-    cabinClass : ,
+    cabinClass : false,
     baggageWeight : 24,
 
 }
 
-if ()
+console.log("Passanger Information")
+console.log("\nPassanger Name : "+passanger.name)
+console.log("Online Chack-in : "+passanger.onlineCheck)
+console.log("Cabin Class : "+passanger.cabinClass)
+console.log("Baggage Weight : "+passanger.baggageWeight)
+
+if (passanger.onlineCheck == true) {
+}
+else {
+    console.log("Please complete online check-in first.")
+}
+
+if (passanger.baggageWeight > 20) {
+    if (passanger.cabinClass) {
+        console.log("Baggage weight exceeds capacity for " + passanger.name + ". Business class are allowed to bring extra weight.")
+    } else {
+        console.log("Baggage weight exceeds capacity for " + passanger.name + ". Baggage Fee are needed for Economy class.")
+    }
+} 
+else {}

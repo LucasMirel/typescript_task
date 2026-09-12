@@ -36,3 +36,53 @@ Student Tasks
 - Translate every business rule into conditional statements.
 - Display the final machine status.
  */
+
+type Machine = {
+    powerOn : boolean;
+    temp : number;
+    highVibration : boolean;
+    productionSpeed : number;
+
+}
+
+const machine : Machine = {
+    powerOn : true,
+    temp : 95,
+    highVibration : false,
+    productionSpeed : 92,
+
+}
+
+console.log("=== Machine Status ===")
+if (machine.powerOn == true) {
+    console.log("Machine Online")
+
+}
+else {
+    console.log("Machine Offline")
+}
+
+if (machine.temp >= 90) {
+    if (machine.highVibration === true) {
+    console.log("Emergency Shutdown")
+    }
+    else {
+        console.log("Cooling required")
+    }
+}
+else {
+    console.log("Cooling required")
+}
+
+if (machine.temp <= 90) {
+    if(machine.productionSpeed < 80) {
+        console.log("Machine operating normaly")
+    }
+    else {
+        console.log("Performance warning")
+    }
+}
+
+else {
+    console.log("Machine operating normaly")
+}
