@@ -37,3 +37,4 @@ let finalTotal: number = subtotal>1000000 ? subtotal * 0.9 : subtotal;
 console.log("=== ITEMS CHECK ===");
 console.log("\nSubtotal : ",subtotal);
 console.log("\nFinal Price : ", finalTotal);
+
