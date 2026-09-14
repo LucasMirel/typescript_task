@@ -52,7 +52,7 @@ const student: StudentInfo = {
     
 }
 
-console.log("Student Information")
+console.log("=== Student Information ===")
 console.log("\nStudent Name : "+student.studentName)
 console.log("GPA : "+student.gpa)
 console.log("Family Income : "+student.familyInc)
