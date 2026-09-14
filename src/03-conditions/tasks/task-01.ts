@@ -50,5 +50,5 @@ console.log("Tuition Paid = "+paid);
 if (paid) {
     console.log("\nCongratulations! You are eligible to graduate.");
 } else {
-    console.log("\nYou are not eligible to graduate.");
+    console.log("\nYou are eligible but you haven't paid tuition fees.");
 }
