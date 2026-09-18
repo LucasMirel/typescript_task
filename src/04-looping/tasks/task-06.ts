@@ -18,3 +18,13 @@ const stocks = [
     9, 0, 55, 13, 2,
     30, 8, 41, 0, 16
 ];
+
+const stockCount = {
+    outStock: 0,
+    lowStock: 0,
+    safeStock: 0,
+    totalStock: 0
+};
+
+for (let i = 0; i < stocks[i]; i++);
+const stock = stock[i];
