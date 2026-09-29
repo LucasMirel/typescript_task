@@ -26,10 +26,10 @@ const stockCount = {
     totalStock: 0
 };
 
-for (let i = 0; i < stockCount; i++) {
+for (let i = 0; i < stocks.length; i++) {
     const score = stocks[i];
     stockCount.totalStock += score;
-    if (score >= 95) {
+    if (score === 0) {
         stockCount.outStock++;
     } else if (score >= 85) {
        stockCount.lowStock++;
@@ -38,13 +38,3 @@ for (let i = 0; i < stockCount; i++) {
     }
 }
 
-const averageScore = medalCounts.totalScore / scores.length;
-
-console.log("");
-console.log("=== Competition Results ===");
-console.log(`Gold Medals: ${medalCounts.gold}`);
-console.log(`Silver Medals: ${medalCounts.silver}`);
-console.log(`Bronze Medals: ${medalCounts.bronze}`);
-console.log(`No Medals: ${medalCounts.noMedal}`);
-console.log(`Average Score: ${averageScore.toFixed(2)}`);
-console.log("");
