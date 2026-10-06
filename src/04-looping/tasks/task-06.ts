@@ -27,14 +27,21 @@ const stockCount = {
 };
 
 for (let i = 0; i < stocks.length; i++) {
-    const score = stocks[i];
-    stockCount.totalStock += score;
-    if (score === 0) {
+    const item = stocks[i];
+    stockCount.totalStock += item;
+    if (item === 0) {
         stockCount.outStock++;
-    } else if (score >= 85) {
+    } else if (item >= 10) {
        stockCount.lowStock++;
-    } else if (score >= 75) {
+    } else if (item >= 75) {
         stockCount.safeStock++;
     }
 }
 
+console.log("");
+console.log("=== Warehouse Stock Report ===");
+console.log(`Out of Stock: ${stockCount.outStock}`);
+console.log(`Low Stock: ${stockCount.lowStock}`);
+console.log(`Safe Stock: ${stockCount.safeStock}`);
+console.log(`Total Inventory: ${stockCount.totalStock}`);
+console.log(`Average Stock Quantity: ${stockCount.totalStock / stocks.length}`);
