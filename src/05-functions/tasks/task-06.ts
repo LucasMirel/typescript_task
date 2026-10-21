@@ -70,3 +70,16 @@ function countLargeTransactions(sales: number[], minimumAmount: number): number 
   }
   return count;
 }
+
+const totalSales = calculateTotalSales(sales);
+const highestTransaction = findHighestTransaction(sales);
+const lowestTransaction = findLowestTransaction(sales);
+const averageSale = calculateAverageSale(sales);
+const largeTransactionsCount = countLargeTransactions(sales, 500000);
+
+console.log("Daily Sales Dashboard:");
+console.log(`Total Sales: ${totalSales}`);
+console.log(`Highest Transaction: ${highestTransaction}`);
+console.log(`Lowest Transaction: ${lowestTransaction}`);
+console.log(`Average Sale: ${averageSale.toFixed(2)}`);
+console.log(`Number of Transactions above Rp500,000: ${largeTransactionsCount}`);
